@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:wb=“http://open.weibo.com/wb”>
+<head>
+<meta charset="utf-8">
+<meta property="wb:webmaster" content="72ec139e32ed5f43"/>
+<title>常山胡柚</title>
+<%= stylesheet_link_tag "application", media: "all" %>
+<%= javascript_include_tag "application" %>
+<%= csrf_meta_tags %>
+<%= render 'layouts/shim' %>
+<script src="http://mat1.gtimg.com/app/openjs/openjs.js#autoboot=no&debug=no"></script>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=1650361794" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<%= render 'layouts/header' %>
+<%= render 'layouts/weibo'%>
+<%= render 'layouts/xinlang'%>
+<div class="container">
+<%= yield %>
+<%= render 'layouts/footer' %>
+
+</div>
+</body>
+</html>
