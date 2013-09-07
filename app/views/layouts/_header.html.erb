@@ -1,10 +1,48 @@
+<style>
+.weibo li
+{
+    display: block;
+    /*width: 63px;
+    height: 13px;*/
+    line-height: 13px;
+    float: left;
+}
+.no1
+{
+    width: 64px;
+    height: 20px;
+    float: left;
+}
+
+.no2
+{
+    width: 63px;
+    height: 13px;
+    float: right;
+}
+
+
+.weibo
+{
+    
+    margin-top: 10px;
+    float: right;
+}
+
+
+
+
+</style>
+
 <header class="navbar navbar-fixed-top">
 <div class="navbar-inner">
 <div class="container">
+<div>
+<div>
 <%= link_to "常山胡柚公益推广平台", root_path, id: "logo" %>
 <nav>
 <ul class="nav pull-middle">
-	<li><%= link_to "主页", legend_path %></li>     
+	<li><%= link_to "主页", root_path %></li>     
     <li id="fat-menu" class="dropdown">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown">
       介绍
@@ -18,11 +56,23 @@
     </li>
      <li><%= link_to "传说", legend_path %></li>  
      <li><%= link_to "保健", healthy_path %></li>
+     <li><%= link_to "文章", article_path %></li>
 
+     
 
 </ul>
     
 </nav>
+</div>
+      
+      
+      <div class="weibo">
+        <div class="no2"><%= render 'layouts/xinlang'%></div>
+        <div class="no1"><%= render 'layouts/weibo'%></div>   
+      </div>
+      
+      
+</div>
 </div>
 </div>
 </header>
